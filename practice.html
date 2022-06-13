@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form id="maxi">
+		<form>
+			<style type="text/css">
+				input{
+					display: inline-flex;
+				}
+			</style>
+			<fieldset>
+			<legend>Общая информация</legend>
+			<div>
+				<p>Фамилия <input type="text" name="surname" placeholder="Иванов"></p>
+				<p>Имя <input type="text" name="name" placeholder="Иван"></p>
+				<p>Отчество <input type="text" name="sec_name" placeholder="Иванович"></p>
+				<p>email <input type="email" name="email" placeholder="mail@mail.ru"></p>
+			</div>
+		</fieldset>
+		</form>
+		<form>
+			<style type="text/css">
+	  			div{
+	  				margin-bottom: 5px;
+
+	  			}
+	  			label{
+	  				width: 80px;
+	  				display: inline-flex;
+	  			}
+			</style>
+			<fieldset>
+			<legend>Пол</legend>
+			<div>
+				<input type="radio" id="man" name="sex">
+				<label for="man">М</label>
+				<input type="radio" id="woman" name="sex">
+				<label for="woman">Ж</label>
+			</div>
+		</fieldset>
+		</form>
+		<form>
+			<fieldset>
+			<legend>Хобби</legend>
+			<div>
+				<input type="checkbox" id="ris" name="hob">
+				<label for="ris">Рисование</label>
+				<input type="checkbox" id="cht" name="hob">
+				<label for="cht">Чтение</label>
+				<input type="checkbox" id="vyaz" name="hob">
+				<label for="vyaz">Вязание</label>
+				<input type="checkbox" id="cul" name="hob">
+				<label for="cul">Кулинария</label>
+			</div>
+		</fieldset>
+		</form>
+		<style type="text/css">
+			button{
+				margin-top: 8px;
+			}
+		</style>
+		<div>
+			<button type="submit" form="maxi">Отправить</button>
+			<button type="reset" form="maxi">Очистить</button>
+		</div>
+	</form>
+</body>
+</html>
